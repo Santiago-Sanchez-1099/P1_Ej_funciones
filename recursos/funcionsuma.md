@@ -3,3 +3,6 @@ Ejemplo de salida
 
 Ejemplo de salida funcion normal + funcion flecha
 ![alt text](image-1.png)
+
+Ejemplo de salida de funcion con parametro
+![alt text](image-3.png)
