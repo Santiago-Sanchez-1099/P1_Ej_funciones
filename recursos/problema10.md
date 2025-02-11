@@ -3,4 +3,4 @@ Resolver un ejercicio de acuerdo a la asignación del problema
 
 Resultados:
 
-![alt text](image-6.png)
+![alt text](image-7.png)

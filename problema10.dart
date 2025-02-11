@@ -1,19 +1,33 @@
+import 'dart:io';
+
 void main() {
-  // LISTA DE CADENAS
-  final List<String> listaCadenas = const [
-    "Miriam",
-    "Casandra",
-    "Santiago",
-    "Melany"
-  ];
+  // Captura la lista de cadenas desde la entrada del usuario
+  final List<String> listaCadenas = capturarListaCadenas();
 
-  // CADENA OBJETIVO
-  final String objetivo = "Santiago";
+  // Captura la cadena objetivo desde la entrada del usuario
+  print("\nIngrese la cadena objetivo que desea buscar:");
+  final String objetivo = stdin.readLineSync()!;
 
-  // VERIFICA SI ESTÁ PRESENTE LA CADENA OBJETIVO EN LA LISTA
+  // Verifica si está presente la cadena objetivo en la lista
   mostrarElementosYVerificar(listaCadenas, objetivo);
 }
 
+// Función para capturar la lista de cadenas
+List<String> capturarListaCadenas() {
+  List<String> listaCadenas = [];
+  print("Ingrese el número de cadenas que desea agregar:");
+  int cantidad = int.parse(stdin.readLineSync()!);
+
+  for (int i = 0; i < cantidad; i++) {
+    print("Ingrese la cadena ${i + 1}:");
+    String cadena = stdin.readLineSync()!;
+    listaCadenas.add(cadena);
+  }
+
+  return listaCadenas;
+}
+
+// Función para mostrar los elementos y verificar si la cadena objetivo está presente
 void mostrarElementosYVerificar(List<String> listaCadenas, String objetivo) {
   print('Santiago Sánchez Tinoco Mat: 22308051281099');
   print("Elementos de la lista:");
