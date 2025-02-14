@@ -29,7 +29,8 @@ void main() {
     'puesto': 'Panadera',
     'fecha_registro': '2022-05-15',
   };
-
+  print('Panaderia "El Panecito"')
+  print('Santiago Sánchez Tinoco Mat: 22308051281099');
   // DATOS DEL PRODUCTO
   print('\nDatos del producto de panadería:');
   producto.forEach((key, value) {
